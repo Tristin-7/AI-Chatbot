@@ -3,56 +3,68 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI Chatbot | Portfolio</title>
+  <title>AI Chatbot</title>
 
   <!-- Page Styling -->
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      background: #e0f7fa; /* Light blue background */
-      color: #004d40; /* Dark teal text */
+      background: #f0f4f5; /* Very light blue-grey background */
+      color: #004d40; /* Dark teal for text */
     }
 
-    header {
-      background: #00acc1; /* Medium blue header */
-      color: white;
-      padding: 25px;
+    /* HERO SECTION INSPIRED BY CHATBOT */
+    .hero {
+      background: #00acc1; /* Same as chatbot header/button */
+      color: #ffffff; /* White text for contrast */
+      padding: 60px 20px;
       text-align: center;
-      font-size: 30px;
-      font-weight: bold;
-      letter-spacing: 1px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
     }
 
-    .container {
-      padding: 40px 20px;
-      max-width: 900px;
+    .hero h1 {
+      font-size: 38px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      line-height: 1.6;
+      max-width: 700px;
       margin: auto;
+    }
+
+    /* MAIN CONTENT */
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
       text-align: center;
+      background: #b2ebf2; /* Bot bubble color */
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.08);
     }
 
     .description {
       font-size: 18px;
-      color: #004d40;
-      margin-bottom: 25px;
       line-height: 1.6;
     }
 
     footer {
       text-align: center;
       padding: 20px;
-      color: #006064;
-      background: #b2ebf2; /* Light blue footer */
-      margin-top: 40px;
+      color: #004d40;
       font-size: 14px;
     }
 
-    /* Optional: Smooth shadow for chatbot widget */
+    /* Chat widget styling to match hero theme */
     df-messenger {
       --df-messenger-bot-message: #b2ebf2;
       --df-messenger-button-titlebar-color: #00acc1;
-      --df-messenger-chat-background-color: #e0f7fa;
+      --df-messenger-chat-background-color: #ffffff;
       --df-messenger-font-color: #004d40;
     }
   </style>
@@ -60,42 +72,24 @@
 
 <body>
 
-  <header>My AI Chatbot (Dialogflow ES)</header>
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <h1>AI Chatbot</h1>
+    <p>
+      This AI chatbot is built with <b>Dialogflow ES</b> and demonstrates my skills in conversational AI, natural language processing, and cloud-based integration.  
+      Interact with it using the widget at the bottom right corner!
+    </p>
+  </section>
 
+  <!-- MAIN CONTENT -->
   <div class="container">
     <p class="description">
-      Welcome to my AI chatbot built using <b>Dialogflow ES</b>.  
-      This bot demonstrates my skills in conversational AI, NLP, and cloud-based integrations.  
-      Feel free to chat with it using the widget at the bottom right corner of the screen.
-    </p>
-
-    <p class="description">
-      💬 The chatbot is active and ready to respond!
+      💬 The chatbot is fully functional and ready to respond.  
+      Explore a live demonstration of conversational AI, inspired by modern chat interfaces.
     </p>
   </div>
 
   <!-- ⭐⭐⭐ PASTE YOUR DIALOGFLOW MESSENGER CODE BELOW THIS LINE ⭐⭐⭐ -->
-  
-  <!-- Example (replace with your real code) -->
-  <!--
-  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-  <df-messenger
-    chat-title="My AI Bot"
-    agent-id="YOUR_AGENT_ID"
-    language-code="en">
-  </df-messenger>
-  -->
-
-  <!-- ⭐⭐⭐ PASTE YOUR DIALOGFLOW MESSENGER CODE ABOVE THIS LINE ⭐⭐⭐ -->
-
-  <footer>
-    © 2025 • Built by [Your Name] • Powered by Dialogflow ES
-  </footer>
-
-</body>
-</html>
-
-
 <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
 <df-messenger
   intent="WELCOME"
@@ -104,11 +98,11 @@
   language-code="en"
 ></df-messenger>
 
+  <!-- ⭐⭐⭐ PASTE YOUR DIALOGFLOW MESSENGER CODE ABOVE THIS LINE ⭐⭐⭐ -->
+
   <footer>
     © 2025 • Built by Tristin Van Der Lingen • Powered by Dialogflow ES
   </footer>
 
 </body>
 </html>
-
-
