@@ -8,22 +8,25 @@
   <!-- Page Styling -->
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      background: #f5f7fa;
+      background: #e0f7fa; /* Light blue background */
+      color: #004d40; /* Dark teal text */
     }
 
     header {
-      background: #3a3f44;
+      background: #00acc1; /* Medium blue header */
       color: white;
-      padding: 20px;
+      padding: 25px;
       text-align: center;
-      font-size: 28px;
+      font-size: 30px;
+      font-weight: bold;
       letter-spacing: 1px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     }
 
     .container {
-      padding: 30px;
+      padding: 40px 20px;
       max-width: 900px;
       margin: auto;
       text-align: center;
@@ -31,15 +34,26 @@
 
     .description {
       font-size: 18px;
-      color: #333;
-      margin-bottom: 20px;
-      line-height: 1.5;
+      color: #004d40;
+      margin-bottom: 25px;
+      line-height: 1.6;
     }
 
     footer {
       text-align: center;
       padding: 20px;
-      color: #777;
+      color: #006064;
+      background: #b2ebf2; /* Light blue footer */
+      margin-top: 40px;
+      font-size: 14px;
+    }
+
+    /* Optional: Smooth shadow for chatbot widget */
+    df-messenger {
+      --df-messenger-bot-message: #b2ebf2;
+      --df-messenger-button-titlebar-color: #00acc1;
+      --df-messenger-chat-background-color: #e0f7fa;
+      --df-messenger-font-color: #004d40;
     }
   </style>
 </head>
@@ -60,6 +74,28 @@
     </p>
   </div>
 
+  <!-- ⭐⭐⭐ PASTE YOUR DIALOGFLOW MESSENGER CODE BELOW THIS LINE ⭐⭐⭐ -->
+  
+  <!-- Example (replace with your real code) -->
+  <!--
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+  <df-messenger
+    chat-title="My AI Bot"
+    agent-id="YOUR_AGENT_ID"
+    language-code="en">
+  </df-messenger>
+  -->
+
+  <!-- ⭐⭐⭐ PASTE YOUR DIALOGFLOW MESSENGER CODE ABOVE THIS LINE ⭐⭐⭐ -->
+
+  <footer>
+    © 2025 • Built by [Your Name] • Powered by Dialogflow ES
+  </footer>
+
+</body>
+</html>
+
+
 <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
 <df-messenger
   intent="WELCOME"
@@ -74,4 +110,5 @@
 
 </body>
 </html>
+
 
